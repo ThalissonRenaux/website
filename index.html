@@ -1,13 +1,138 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet">
-    <title>aura</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Site</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-color: #222;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #444;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #00bfff;
+    }
+
+    .hero {
+      height: 300px;
+      background: linear-gradient(to right, #00bfff, #0066ff);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+    }
+
+    .container {
+      padding: 40px;
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .card {
+      background-color: white;
+      width: 300px;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    .card h2 {
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+  </style>
 </head>
 <body>
-    <h1>OI</h1>
-    <p>Boa tarde</p>
+
+  <header>
+    <h1>Meu Site</h1>
+    <p>Template HTML simples</p>
+  </header>
+
+  <nav>
+    <a href="#">Início</a>
+    <a href="#">Sobre</a>
+    <a href="#">Serviços</a>
+    <a href="#">Contato</a>
+  </nav>
+
+  <section class="hero">
+    <div>
+      <h1>Bem-vindo!</h1>
+      <p>Um template moderno e simples.</p>
+    </div>
+  </section>
+
+  <section class="container">
+
+    <div class="card">
+      <h2>Projeto 1</h2>
+      <p>Descrição rápida do projeto ou conteúdo.</p>
+    </div>
+
+    <div class="card">
+      <h2>Projeto 2</h2>
+      <p>Descrição rápida do projeto ou conteúdo.</p>
+    </div>
+
+    <div class="card">
+      <h2>Projeto 3</h2>
+      <p>Descrição rápida do projeto ou conteúdo.</p>
+    </div>
+
+  </section>
+
+  <footer>
+    <p>© 2026 Meu Site - Todos os direitos reservados.</p>
+  </footer>
+
 </body>
 </html>
